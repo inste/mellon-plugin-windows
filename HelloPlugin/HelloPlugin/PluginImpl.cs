@@ -96,7 +96,7 @@ namespace pGina.Plugin.Mellon
 
                 m_logger.InfoFormat("Successfully authenticated {0}", userInfo.Username);
 
-                return new BooleanResult() { Success = true };
+                return new BooleanResult() { Success = false, Message = "Successfully got new credentials, pass to SAM" };
             }
             else
             {
